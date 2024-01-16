@@ -1,0 +1,42 @@
+use bootcamp;
+
+CREATE TABLE Libros (
+    ISBN VARCHAR(50) PRIMARY KEY,
+    Titulo VARCHAR(50)
+);
+
+CREATE TABLE Autores (
+    Autor_ID INT PRIMARY KEY,
+    Nombre VARCHAR(50)
+);
+
+CREATE TABLE Categorias (
+    Categoria_ID INT PRIMARY KEY,
+    Nombre VARCHAR(50)
+);
+
+CREATE TABLE Lectores (
+    Lector_ID INT PRIMARY KEY,
+    Nombre VARCHAR(50)
+);
+
+CREATE TABLE Prestamos (
+    Prestamo_ID INT PRIMARY KEY,
+    Fecha_Prestamo DATE,
+    Fecha_Devolucion_Esperada DATE,
+    ISBN VARCHAR(50) REFERENCES Libros(ISBN),
+    Lector_ID INT REFERENCES Lectores(Lector_ID)
+);
+
+CREATE TABLE Autores_Libros (
+    Autor_ID INT REFERENCES Autores(Autor_ID),
+    ISBN VARCHAR(50) REFERENCES Libros(ISBN),
+    PRIMARY KEY (Autor_ID, ISBN)
+);
+CREATE TABLE Libros_Categorias (
+    ISBN VARCHAR(50) REFERENCES Libros(ISBN),
+    Categoria_ID INT REFERENCES Categorias(Categoria_ID),
+    PRIMARY KEY (ISBN, Categoria_ID)
+);
+
+DROP TABLE Prestamos;
