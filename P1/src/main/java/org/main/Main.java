@@ -1,6 +1,8 @@
-package org.example;
+package org.main;
 
 //import code.Conexion;
+import org.test.Conexion;
+
 import java.sql.*;
 /**
  *

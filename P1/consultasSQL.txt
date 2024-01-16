@@ -1,0 +1,15 @@
+SELECT * FROM Libros;
+
+SELECT * FROM Libros;
+
+SELECT * FROM Autores;
+
+SELECT * FROM Categorias;
+
+SELECT * FROM Lectores;
+
+SELECT * FROM Prestamos;
+
+SELECT * FROM Autores_Libros;
+
+SELECT * FROM Libros_Categorias;

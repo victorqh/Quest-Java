@@ -1,0 +1,3 @@
+INSERT INTO Libros_Categorias (ISBN, Categoria_ID) VALUES('isbn1', 1);
+INSERT INTO Libros_Categorias (ISBN, Categoria_ID) VALUES('isbn2', 2);
+INSERT INTO Libros_Categorias (ISBN, Categoria_ID) VALUES('isbn3', 3);

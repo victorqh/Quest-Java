@@ -40,3 +40,44 @@ CREATE TABLE Libros_Categorias (
 );
 
 DROP TABLE Prestamos;
+
+INSERT INTO Libros (ISBN, Titulo) VALUES('isbn1', 'Libro1');
+INSERT INTO Libros (ISBN, Titulo) VALUES('isbn2', 'Libro2');
+INSERT INTO Libros (ISBN, Titulo) VALUES('isbn3', 'Libro3');
+
+INSERT INTO Autores (Autor_ID, Nombre) VALUES(11, 'Autor1');
+INSERT INTO Autores (Autor_ID, Nombre) VALUES(22, 'Autor2');
+INSERT INTO Autores (Autor_ID, Nombre) VALUES(33, 'Autor3');
+
+INSERT INTO Categorias (Categoria_ID, Nombre) VALUES(1, 'Categoria1');
+INSERT INTO Categorias (Categoria_ID, Nombre) VALUES(2, 'Categoria2');
+INSERT INTO Categorias (Categoria_ID, Nombre) VALUES(3, 'Categoria3');
+
+INSERT INTO Lectores (Lector_ID, Nombre) VALUES(111, 'Lector1');
+INSERT INTO Lectores (Lector_ID, Nombre) VALUES(222, 'Lector2');
+INSERT INTO Lectores (Lector_ID, Nombre) VALUES(333, 'Lector3');
+
+INSERT INTO Autores_Libros (Autor_ID, ISBN) VALUES(11, 'isbn1');
+INSERT INTO Autores_Libros (Autor_ID, ISBN) VALUES(22, 'isbn2');
+INSERT INTO Autores_Libros (Autor_ID, ISBN) VALUES(33, 'isbn3');
+
+INSERT INTO Libros_Categorias (ISBN, Categoria_ID) VALUES('isbn1', 1);
+INSERT INTO Libros_Categorias (ISBN, Categoria_ID) VALUES('isbn2', 2);
+INSERT INTO Libros_Categorias (ISBN, Categoria_ID) VALUES('isbn3', 3);
+
+
+SELECT * FROM Libros;
+
+SELECT * FROM Libros;
+
+SELECT * FROM Autores;
+
+SELECT * FROM Categorias;
+
+SELECT * FROM Lectores;
+
+SELECT * FROM Prestamos;
+
+SELECT * FROM Autores_Libros;
+
+SELECT * FROM Libros_Categorias;

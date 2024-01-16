@@ -1,0 +1,3 @@
+INSERT INTO Autores_Libros (Autor_ID, ISBN) VALUES(11, 'isbn1');
+INSERT INTO Autores_Libros (Autor_ID, ISBN) VALUES(22, 'isbn2');
+INSERT INTO Autores_Libros (Autor_ID, ISBN) VALUES(33, 'isbn3');

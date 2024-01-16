@@ -1,0 +1,3 @@
+INSERT INTO Autores (Autor_ID, Nombre) VALUES(11, 'Autor1');
+INSERT INTO Autores (Autor_ID, Nombre) VALUES(22, 'Autor2');
+INSERT INTO Autores (Autor_ID, Nombre) VALUES(33, 'Autor3');

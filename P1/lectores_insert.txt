@@ -1,0 +1,3 @@
+INSERT INTO Lectores (Lector_ID, Nombre) VALUES(111, 'Lector1');
+INSERT INTO Lectores (Lector_ID, Nombre) VALUES(222, 'Lector2');
+INSERT INTO Lectores (Lector_ID, Nombre) VALUES(333, 'Lector3');
